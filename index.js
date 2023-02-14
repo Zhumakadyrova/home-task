@@ -98,15 +98,80 @@ for(let j = 0; j < number.length; j++) {
   sum = sum + number[j];
 }
 console.log(sum);
-//  object
+//  How to create object
 let example1 ={}; 
 
-// название свойтсва, 
-let joldosh = {name: "Joldosh", age: 22, isEmployed: false }; 
+// с лева название свойтсва, справа значение свойства
+let joldosh = {
+  name: "Joldosh", 
+  age: 22, 
+  isEmployed: false,
+  sayHello: function() {
+    console.log("Hello");
+  },
+}; 
 
-let nagima = { name: "Nagima", 
-age: 21, 
-workPlace: "Private School", 
-isEmployed: "Student", 
-sex: "Female"};
-console.log(nagima);
+// view, edit, add 
+
+
+console.log(joldosh.name);
+joldosh.age = 20;
+console.log(joldosh.age);
+joldosh.favouriteBooks = ["Harry potter", "Harry Potter2"];
+console.log(joldosh);
+delete joldosh.favouriteBooks;
+console.log(joldosh);
+joldosh.sayHello();
+// let school = {
+//   school:"secondary",
+//   size: "big",
+//   meaning: "studying",
+
+// }
+// Щбьекты могут содержать функции и они в обьекте будут называться методом этого объекта
+
+
+let nagima = { 
+  name: "Nagima", 
+  age: 21, 
+  workPlace: "Private School", 
+  isEmployed: "Student", 
+  sex: "Female",
+  surname: "Zhumakadyrova",
+  secondName: "Shailobekovna",
+  color: "White",
+  sayAddress: function() {
+    console.log("Gagarin 9");
+  },
+  sayHobby: function() {
+    console.log("My hobby is to read a book"); 
+  },
+  sayBye: function() {
+    console.log(" Bye " + this.name);
+  },
+  sayAge: function() {
+    console.log ( " I'm " + this.age + " y.o");
+  },
+  saySex: function() {
+    console.log ( " She is a " + this.sex);
+  },
+};
+nagima.sayAge();
+nagima.age = 18;
+nagima.sayAge();
+nagima.sayBye();
+nagima.name = "Nagi";
+nagima.sayBye();
+nagima.saySex();
+nagima.sayHobby();
+nagima.sayAddress();
+// console.log(nagima);
+// console.log(nagima.name);
+// console.log(nagima.age);
+// console.log(nagima.sex);
+// nagima.age = 18;
+// console.log(nagima.age);
+
+let example = {
+  number: 0,
+}
