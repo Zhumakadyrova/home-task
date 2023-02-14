@@ -174,4 +174,39 @@ nagima.sayAddress();
 
 let example = {
   number: 0,
+  inc: function() {
+    this.number = this.number + 1;
+  }
 }
+console.log(example.number);
+example.inc();
+example.inc();
+console.log(example.number);
+
+let example2 = {
+  number: 0,
+  add: function(num) {
+    this.number = this.number + num;
+  },
+  ink: function() {
+    this.number = this.number - 10;
+  },
+  substract: function(num) {
+    this.number = this.number - num;
+  },
+  print: function() {
+    console.log(this.number);
+  }
+}
+console.log(example2.number);
+example2.ink();
+console.log(example2.number);
+example2.add(20);
+console.log(example2.number);
+example2.add(15);
+console.log(example2.number);
+example2.ink(20);
+console.log(example2.number);
+example2.add(6);
+example2.substract(4);
+example2.print();
