@@ -73,3 +73,40 @@ console.log(without1);
 let without2 = [4, 5, 1, 1, 7, 1];
 without2.pop();
 console.log(without2)
+
+function result1(a, b, c) {
+  console.log(a + b +c);
+}
+result1(8, 5, 6);
+
+function result2(a, b, c) {
+  return a* b * c;
+}
+console.log (result2(10, 5, 3));
+
+function result3(a, b) {
+  console.log(a* b /2)
+}
+result3(8, 10);
+
+for (let a = 0; a <= 10; a ++)
+console.log(a);
+
+let number = [1, 5, 3, 4, 5, 6, 7, 8, 9, 10];
+let sum = 0; 
+for(let j = 0; j < number.length; j++) {
+  sum = sum + number[j];
+}
+console.log(sum);
+//  object
+let example1 ={}; 
+
+// название свойтсва, 
+let joldosh = {name: "Joldosh", age: 22, isEmployed: false }; 
+
+let nagima = { name: "Nagima", 
+age: 21, 
+workPlace: "Private School", 
+isEmployed: "Student", 
+sex: "Female"};
+console.log(nagima);
